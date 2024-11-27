@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVAn Clicker</title>
+    <link rel="stylesheet" href="styler.css" />
+</head>
+
+<body>
+    <div class="game">
+        <!-- Header: монета і рахунок -->
+        <div class="header">
+            <img class="coin" id="coin" src="217853.png" alt="Coin" />
+            <h2 class="score" id="score">0</h2>
+        </div>
+
+        <!-- Коло з логотипом -->
+        <div class="circle">
+            <img class="lion" id="circle" src="LionLNTU.png" alt="Lion Logo" />
+        </div>
+
+        <!-- Енергетичний бар -->
+        <div id="energy">Energy: <span id="energyAmount">100</span></div>
+        <div id="energyBar">
+            <div id="energyLevel"></div>
+        </div>
+
+        <!-- Кнопки навігації -->
+        <div class="button-container">
+            <button class="nav-button" onclick="navigateToScreen('screen1.html')">
+                <img class="buttonimg" src="Mine.svg" width="30" height="30" alt="Mine Icon" />
+            </button>
+            <button class="nav-button" onclick="navigateToScreen('screen2.html')">
+                <img class="buttonimg" src="task-management.svg" width="30" height="30" alt="Task Management Icon" />
+            </button>
+            <button class="nav-button" onclick="navigateToScreen('screen3.html')">
+                <img class="buttonimg" src="Home.svg" width="30" height="30" alt="Home Icon" />
+            </button>
+        </div>
+
+        <!-- Контейнер для перемикача теми -->
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <img class="moon" src="moon.svg" width="15" height="15" alt="Moon Icon" />
+            </div>
+        </div>
+    </div>
+
+    <script src="apper.js" defer></script>
+</body>
+
+</html>
